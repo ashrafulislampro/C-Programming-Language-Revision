@@ -7,10 +7,18 @@ int is_prime(int n)
     if (n < 2)
         return 0;
 
-    for (i = 2; i < n; i++)
+    if (n == 2)
+        return 1;
+
+    if (n % 2 == 0)
+        return 0;
+
+    for (i = 3; i <= n / 2; i = i + 2)
     {
+
         if (n % i == 0)
         {
+            printf("result = %d %d\n", i, n);
             return 0;
         }
     }
