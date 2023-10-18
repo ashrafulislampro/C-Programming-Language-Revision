@@ -11,10 +11,11 @@ int is_prime(int n)
         return 0;
 
     root = sqrt(n);
+    printf("Root Number : %d\n", root);
 
     for (i = 3; i <= root; i = i + 2)
     {
-        if (n % 2 == 0)
+        if (n % i == 0)
             return 0;
     }
 
