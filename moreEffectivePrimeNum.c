@@ -4,7 +4,8 @@
 int is_prime(int n)
 {
     int i, root;
-
+    if (n < 2)
+        return 0;
     if (n == 2)
         return 1;
     if (n % 2 == 0)
