@@ -12,7 +12,7 @@ int main()
     for (col = 0; col < 10; col++)
     {
         marks[3][col] = marks[0][col] / 4.0 + marks[1][col] / 4.0 + marks[2][col] / 2.0;
-        printf("Roll no = %d Final marks = %d\n", col + 1, marks[3][col]);
+        printf("Roll no = %d Total marks = %d\n", col + 1, marks[3][col]);
     }
 
     return 0;
